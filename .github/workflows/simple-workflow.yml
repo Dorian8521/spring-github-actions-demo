@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Recuperation code source
-        run: echo 'Récupération du code source'
+        run: echo "Récupération du code source"
 
       - name: Verification
-        run: echo 'Vérification terminée'
+        run: echo "Vérification terminée"
