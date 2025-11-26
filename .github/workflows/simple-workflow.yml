@@ -3,14 +3,14 @@ name: Simple workflow
 on:
   workflow_dispatch:
   #schedule:
-    #- cron: '0 * * * *'
-
+    #- cron: '0 0-23 * * *'
 
 jobs:
   main_job:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@main
       - name: Recuperation code source
         run: echo "Récupération du code source"
 
